@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QRgen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar" style="background-color:#1B9CFC">
+  <a class="navbar-brand" href="#" style="color:black; font-family: Sans-serif;">
+    <h3>QRGen</h3>
+    <!-- <img src="https://i.imgur.com/InruFjw.png" height="70" width="70" alt="QRgen"> -->
+  </a>
+</nav>
+
+<br/><br/>
+
+<div class="container-sm">
+<h3>Generate QR Code</h3>
+    <form method="POST" action="">
+
+        <div class="form-group">
+
+            <div class="input-group">
+                <input type="text" class="form-control col-sm-4" placeholder="Prefix" name="prefix" required>
+                <input type="number" class="form-control col-sm-4" placeholder="Start" name="start" required>
+                <input type="number" class="form-control col-sm-4" placeholder="End" name="end" required>
+
+            </div>
+            <br/>
+            <div class="input-group">
+                <input type="text" class="form-control" name="item_name" placeholder="Name of the Item" required>
+
+                <input type="text" class="form-control ml-1" name="category" placeholder="Category" required>
+            </div>
+
+            <br/>
+            <div class="input-group">
+                <span class="form-control col-sm-1">&#8377;</span>
+                <input  type="text" class="form-control col-sm-4" name="rate" placeholder="Price of the Item" required>
+            </div>
+            <!--
+            <label>Enter the Detail</label>
+            <textarea class="form-control" name="qrdetail" rows="3"></textarea>
+            -->
+
+        </div>
+
+        <p><input type="submit" class="btn btn-primary" value="Generate QR"></p>
+    </form>
+
+</div>
+</body>
+</html>
