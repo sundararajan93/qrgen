@@ -46,3 +46,8 @@ $ python3 index.py
 
 5. You can print to these qr codes to stickers and stick them to the product
 
+### API to generate QR code based on request
+
+1. You can perform a curl command to send the request with crafted URL
+2. The image file would be downloaded to the local machine
+3. This URL can be used in any other application if needed
