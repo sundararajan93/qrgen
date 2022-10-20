@@ -31,7 +31,7 @@ def qrgen():
         return render_template('qr.html', f=f)
     return render_template("qrgen.html")
 
-
+# Older version
 @app.route('/api/v0.1/json/item=<string:item>&category=<string:category>&code=<string:code>&price=<int:price>&format=<string:format>', methods=['GET', 'POST'])
 def api(item, category, code, price, format):
     if request.method == "POST":
@@ -54,7 +54,7 @@ def api(item, category, code, price, format):
     else:
         return render_template("index.html")
 
-
+# Current version
 @app.route('/api/v1/qr_data=<string:qr_data>&mar=<int:mar>&fmt=<string:fmt>', methods=['GET', 'POST'])
 def api_json(qr_data, mar, fmt):
     folder = os.path.join(app.config['UPLOAD_FOLDER'])
